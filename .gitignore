@@ -1,0 +1,10 @@
+node_modules/
+dist/
+ai-model/
+legacy/
+blender/
+progress/
+BUILD_PLAN.md
+GROWTH_PLAN.md
+before-after-sharper-pictures.jpg
+.DS_Store
