@@ -91,7 +91,7 @@ export const card = (p: Piece, i = 0) => `
     <a class="pcard__img" href="/p/${p.slug}" aria-label="${p.name}, ${p.category.toLowerCase()} in ${p.colour.toLowerCase()}, ${money(p.price)}">
       <img class="pcard__a" ${cardSrc(p)} alt="" loading="lazy" draggable="false">
       ${p.images.backCut ? `<img class="pcard__b" src="${p.images.backCut}" alt="" loading="lazy" draggable="false">` : ''}
-      ${p.badge ? `<span class="pcard__badge">${p.badge}</span>` : ''}${p.spin ? '<span class="pcard__360">Rotate ↻</span>' : ''}
+      ${p.spin ? '<span class="pcard__360">Rotate ↻</span>' : ''}
     </a>
     <button class="pcard__wish${wish.has(p.slug) ? ' on' : ''}" data-wish="${p.slug}" aria-pressed="${wish.has(p.slug)}" aria-label="Save ${p.name} to wishlist">${ICON.heart}</button>
     <div class="pcard__meta"><a class="pcard__name" href="/p/${p.slug}" tabindex="-1">${p.name}</a><span class="pcard__kind">${p.category} · ${p.colour}</span><span class="pcard__price">${money(p.price)}</span></div>
