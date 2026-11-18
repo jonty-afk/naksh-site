@@ -168,7 +168,7 @@ const routes: [RegExp, Route][] = [];
 export const route = (re: RegExp, r: Route) => routes.push([re, r]);
 let cleanup: void | (() => void); let first = true;
 const here = () => location.pathname.replace(/\/+$/, '') || '/';
-export const DEFAULT_DESC = 'Festive Indian suits: sharara sets, anarkalis, patiala and straight suits with zardozi, gota and mirror work. Delivered across New Zealand, Australia and worldwide.';
+export const DEFAULT_DESC = 'Festive Indian suits: farshi and sharara sets, anarkalis and straight suits with zardozi, gota and mirror work. Delivered across New Zealand, Australia and worldwide.';
 
 /** Show the page for the current address. `keep` = stay at this scroll position (used when only the currency changes). */
 async function go(keep?: number) {

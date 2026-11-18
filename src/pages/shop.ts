@@ -20,7 +20,7 @@ export const OCC: Record<string, { line: string; face: string }> = {
 const CAT_LINE: Record<string, string> = {
   'sharara-set': 'Short kurtas over shararas that flare from the knee, made for sangeets and festivals.',
   'straight-suit': 'Straight kurtas with pants and dupatta, finished with gota, mirror and embroidered borders.',
-  'patiala-suit': 'Kurtas with full patiala salwars: sequins, prints and bright Punjabi colour.',
+  'farshi-suit': 'Kurtas with wide, flowing farshi salwars: sequins, prints and bright Punjabi colour.',
   anarkali: 'Floor-length anarkalis with heavy work at the yoke.',
   lehenga: 'Lehengas with a flared skirt, blouse and dupatta, embroidered in gold.',
   'drape-set': 'Pre-draped saree sets: a blouse and a ready-draped skirt, nothing to pleat or pin.',
@@ -42,7 +42,7 @@ export function shop(catSlug: string, q: URLSearchParams, occasion?: string): Pa
   const occ = occasion ? OCCASIONS.find((o) => slugify(o) === occasion) : undefined;
   const cat = CATEGORIES.find((c) => slugify(c) === (catSlug || q.get('cat')));
   const title = occ ?? edit?.title ?? (cat ? cat + 's' : 'The collection');
-  const intro = occ ? OCC[occasion!]?.line ?? '' : edit?.intro ?? (cat ? CAT_LINE[slugify(cat)] : 'Sharara sets, straight and patiala suits, anarkalis and long kurtas, rich in zardozi, gota and mirror work.');
+  const intro = occ ? OCC[occasion!]?.line ?? '' : edit?.intro ?? (cat ? CAT_LINE[slugify(cat)] : 'Farshi and sharara sets, straight suits, anarkalis and long kurtas, rich in zardozi, gota and mirror work.');
   const crumbs: [string, string][] = occ ? [['Home', '/'], ['Occasions', '/occasions'], [occ, '']] : [['Home', '/'], ['Shop', cat || edit ? '/shop' : ''], ...(cat || edit ? [[title, '']] as [string, string][] : [])];
   const pick = (cats: string[], occs: string[], cols: string[], crafts: string[], sort: string) => {
     let list = CATALOGUE.filter((p) => (!edit || edit.test(p)) && (!cats.length || cats.includes(slugify(p.category))) && (!occs.length || p.occasions.some((o) => occs.includes(slugify(o))))

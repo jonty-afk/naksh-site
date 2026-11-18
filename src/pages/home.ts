@@ -28,11 +28,11 @@ const fig = (p: Piece, eager = false) => `<img src="${p.images.frontCut}" alt=""
 
 export default function home(): Page {
   const newIn = CATALOGUE.slice(0, 10);
-  const cats: [string, string, string][] = [['Sharara sets', '/shop/sharara-set', 'navy-gold-print-sharara'], ['Straight suits', '/shop/straight-suit', 'rani-green-gota-suit'], ['Patiala suits', '/shop/patiala-suit', 'purple-sequin-suit'], ['Anarkalis', '/shop/anarkali', 'red-zardozi-anarkali'], ['Long kurta sets', '/shop/long-kurta-set', 'royal-blue-phiran'], ['Co-ord sets', '/shop/co-ord-set', 'emerald-beaded-coord']];
+  const cats: [string, string, string][] = [['Farshi suits', '/shop/farshi-suit', 'purple-sequin-suit'], ['Sharara sets', '/shop/sharara-set', 'navy-gold-print-sharara'], ['Straight suits', '/shop/straight-suit', 'rani-green-gota-suit'], ['Anarkalis', '/shop/anarkali', 'red-zardozi-anarkali'], ['Long kurta sets', '/shop/long-kurta-set', 'royal-blue-phiran'], ['Co-ord sets', '/shop/co-ord-set', 'emerald-beaded-coord']];
   return {
     glow: '#521222', image: '/og/home.jpg',
     ld: [
-      { '@context': 'https://schema.org', '@type': 'Organization', name: BRAND.name, url: '/', logo: '/og/home.jpg', description: 'Festive Indian suits: sharara sets, anarkalis, patiala and straight suits with zardozi, gota and mirror work. Based in New Zealand, delivering worldwide.' },
+      { '@context': 'https://schema.org', '@type': 'Organization', name: BRAND.name, url: '/', logo: '/og/home.jpg', description: 'Festive Indian suits: farshi and sharara sets, anarkalis and straight suits with zardozi, gota and mirror work. Based in New Zealand, delivering worldwide.' },
       { '@context': 'https://schema.org', '@type': 'WebSite', name: BRAND.name, url: '/' },
     ],
     html: `

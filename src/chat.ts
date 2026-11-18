@@ -48,7 +48,7 @@ const CAT_WORDS: [Category, string[]][] = [
   ['Lehenga', ['lehenga', 'lehengas', 'lengha', 'lehnga', 'lahenga', 'ghagra', 'skirt']],
   ['Drape set', ['saree', 'sari', 'sarees', 'saris', 'drape', 'pre draped', 'predraped', 'drape saree']],
   ['Sharara set', ['sharara', 'shararas', 'gharara', 'ghararas']],
-  ['Patiala suit', ['patiala', 'patialas', 'salwar', 'shalwar', 'punjabi suit']],
+  ['Farshi suit', ['farshi', 'farshis', 'patiala', 'patialas', 'salwar', 'shalwar', 'punjabi suit']],
   ['Straight suit', ['suit', 'suits', 'salwar kameez', 'straight suit', 'pant suit']],
   ['Long kurta set', ['kurta', 'kurtas', 'kurti', 'kurtis', 'phiran', 'phirans', 'long kurta']],
   ['Co-ord set', ['co ord', 'coord', 'co-ord', 'indo western', 'crop top', 'palazzo']],
